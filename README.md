@@ -23,7 +23,7 @@ dd/mm/yy	TimeStamp1 TimeStamp2 TimeStamp3 etc ...
 
 Copy the script by SFTP to /tmp and make it executable:
 
-chmod +x data_collection_v5.0.6.sh
+chmod +x data_collection_v5.0.7.sh
 
 ### Prerequisites
 
@@ -33,7 +33,7 @@ The script is executed from the ALE bash shell and has no special requirements.
 
 /tmp is in the $PATH for root, so the script can be executed as: 
 
-/tmp/data_collection_v5.0.6.sh
+/tmp/data_collection_v5.0.7.sh
 
 The script begins by requesting data input from the user for:
 
@@ -100,7 +100,7 @@ If you wish to contribute, then please contact the owner.
 
 ## Versioning
 
-Versioning is simple.  The first version published is 5.0.6.sh.  Bug fixes go into the current 5.0.x tree.  New features in the second tier e.g. 5.x.x.
+Versioning is simple.  The current published version is 5.0.7.sh.  Bug fixes go into the current 5.0.x tree.  New features in the second tier e.g. 5.x.x.
 
 ## Authors
 
