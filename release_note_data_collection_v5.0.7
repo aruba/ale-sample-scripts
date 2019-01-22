@@ -1,0 +1,18 @@
+Release Notes 
+------------- 
+
+Version
+-------
+data_collection_v5.0.7.sh
+
+Release Date
+------------
+22/01/2019
+
+Description
+-----------
+Up to version 5.0.6 if the VAR $start OR $end are empty, an error is returned via STDOUT as subtraction of empty variables is attempted.  As a result, the csv output file is not updated thus making it confusing for a user to understand why no value was written for the specified timestamp.
+
+Solution
+--------
+Version data_collection_v5.0.7.sh checks if either $start or $end are NULL and if true, does not calculate the delta between $end and $start.  In the case $start is NULL, then the script will write "NULL" to the output file for the relevant timestamp.  If $start is not empty, the arithmetic operation should continue. The change also echoes to STDOUT that a NULL START or END date has be encountered so that users are informed.
